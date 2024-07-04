@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id ="title"> Dog Tracker</h1>
+    <div id="instructionContainer">
+        <div class = "instruction">
+            <h2>GET</h2>
+            <h3>How to get list of all dogs:</h3>
+            <h4>URL/dogs</h4>
+        </div>
+        <div class = "instruction">
+            <h2>GET</h2>
+            <h3>How to get dog by Id:</h3>
+            <h4>URL/dogs/:id</h4>
+        </div>
+        <div class = "instruction">
+            <h2>POST</h2>
+            <h3>How to post a dog:</h3>
+            <h4>URL/dogs</h4>
+            <h3>Structure Example:</h3>
+            <pre>
+{ 
+    "name": "Bambi", 
+    "breed": "chihuahua", 
+    "weight": 20, 
+    "img" : Image URL 
+}
+            </pre>
+        </div>
+        <div class = "instruction">
+            <h2>PUT</h2>
+            <h3>How to put a dog:</h3>
+            <h4>URL/dogs/:id</h4>
+            <h3>Structure Example:</h3>
+            <pre>
+{ 
+    "name": "Bambi", 
+    "breed": "chihuahua", 
+    "weight": 20, 
+    "img" : Image URL 
+}
+            </pre>
+        </div>
+        <div class = "instruction">
+            <h2>DELETE</h2>
+            <h3>How to delete a dog by Id:</h3>
+            <h4>URL/dogs/:id</h4>
+        </div>
+    </div>
+</body>
+</html>

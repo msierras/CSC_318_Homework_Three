@@ -5,12 +5,13 @@ const Dog = require('./models/dogModels')
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}))
+app.use(express.static('public'))
 
 //routes
 
 // GET
 app.get('/', (req, res)=> {
-    res.send("Hello world!")
+    res.sendFile(__dirname + '/public/index.html');
 })
 
 
